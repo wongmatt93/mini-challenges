@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mini Challenges</title>
+  </head>
+  <body>
+    <div>
+      <p class="total">Total: $0.00</p>
+      <button class="cola vending" value="2">Lime Cola $2.00</button>
+      <button class="peanuts vending" value="3">Salted Peanuts $3.00</button>
+      <button class="chocolate vending" value="4">Chocolate Bar $4.00</button>
+      <button class="gummies vending" value="6">Fruit Gummies $6.00</button>
+    </div>
+    <div>
+      <form class="coin-form">
+        <label for="how-many">How many?</label>
+        <input type="number" name="how-many" id="how-many" min="0" />
+        <label for="coin-type">Which coin?</label>
+        <select name="coin-type" id="coin-type">
+          <option value="penny" id="penny">Penny</option>
+          <option value="nickel">Nickel</option>
+          <option value="dime">Dime</option>
+          <option value="quarter">Quarter</option>
+        </select>
+        <button>Make Money!</button>
+      </form>
+      <total class="wallet-total">Total: $0.00</total>
+      <ul class="coin-container"></ul>
+    </div>
+    <div>
+      <div class="light-bulb">Light Bulb</div>
+      <button class="light-switch" value="light-on">On</button>
+      <button class="light-switch" value="light-off">Off</button>
+      <button class="light-switch" value="light-toggle">Toggle</button>
+      <button class="light-switch" value="light-end">End</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
